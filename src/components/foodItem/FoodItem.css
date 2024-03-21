@@ -37,3 +37,33 @@
   font-weight: 500;
   margin: 10px 0px;
 }
+.food_item_img_container {
+  position: relative;
+}
+.food_item_img_container .add {
+  width: 35px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.food_item_img_container .add-2 {
+  position: absolute;
+  right: 6px;
+}
+.food_item_counter {
+  width: 120px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px;
+  border-radius: 50px;
+  background-color: #fff;
+}
+/* .food_item_counter img{
+
+} */

@@ -34,7 +34,7 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="navbar_right">
-        <img src={assets.search_icon} alt="" />
+        <img src={assets.search_icon} alt="" className="search" />
         <div className="navbar_search_icon">
           <img src={assets.basket_icon} alt="" />
           <div className="dot"></div>

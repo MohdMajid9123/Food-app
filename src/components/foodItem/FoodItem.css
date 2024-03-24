@@ -41,7 +41,7 @@
   position: relative;
 }
 .food_item_img_container .add {
-  width: 35px;
+  width: 30px;
   position: absolute;
   bottom: 15px;
   right: 15px;
@@ -51,6 +51,12 @@
 .food_item_img_container .add-2 {
   position: absolute;
   right: 6px;
+  width: 30px;
+}
+.food_item_img_container .remove {
+  width: 30px;
+  left: 3px;
+  position: relative;
 }
 .food_item_counter {
   width: 120px;
@@ -60,10 +66,10 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 6px;
+  padding: 3px;
   border-radius: 50px;
   background-color: #fff;
 }
-/* .food_item_counter img{
-
-} */
+.food_item_counter p {
+  margin-left: 10px;
+}

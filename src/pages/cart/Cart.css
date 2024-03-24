@@ -21,8 +21,9 @@
   background-color: #e2e2e2;
   border: none;
 }
-.cross {
+.cross img {
   cursor: pointer;
+  width: 12px;
 }
 .cart_bottom {
   margin-top: 80px;

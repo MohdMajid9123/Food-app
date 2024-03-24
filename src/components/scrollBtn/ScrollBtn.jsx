@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./ScrollBtn.css";
-import img from "../../../public/9110844_arrow_bold_top_icon.png";
+import img from "/9110844_arrow_bold_top_icon.png";
 
 const ScrollBtn = () => {
   const [btnVisible, setBtnVisible] = useState(false);

@@ -22,8 +22,9 @@ const FoodItem = ({ id, name, price, description, image }) => {
               src={assets.remove_icon_red}
               onClick={() => removeFromCart(id)}
               alt=""
+              className="remove"
             />
-            <p>{cartItems[id]}</p>
+            <p className="number">{cartItems[id]}</p>
             <img
               src={assets.add_icon_green}
               onClick={() => addToCart(id)}

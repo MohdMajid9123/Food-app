@@ -4,12 +4,14 @@ const Header = () => {
   return (
     <div className="header">
       <div className="header_contents">
-        <h2>Order you favourite food here </h2>
+        <h2>Order You Favourite Food Here</h2>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit,
           corrupti.
         </p>
-        <button>View Menu</button>
+        <a href="#explore_menu">
+          <button>View Menu</button>
+        </a>
       </div>
     </div>
   );

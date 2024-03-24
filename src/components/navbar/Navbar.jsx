@@ -4,10 +4,13 @@ import { assets } from "../../assist/assets";
 import { Link } from "react-router-dom";
 import { StoreContext } from "../../context/StoreContext";
 
+import cart from "/trolley_4290854.png";
+
 const Navbar = ({ setShowLogin }) => {
+  const { getTotalCartAmout } = useContext(StoreContext);
+
   const [menu, setMenu] = useState("home");
 
-  const { getTotalCartAmout } = useContext(StoreContext);
   return (
     <div className="navbar">
       <Link to="/">
@@ -19,35 +22,34 @@ const Navbar = ({ setShowLogin }) => {
           onClick={() => setMenu("home")}
           className={menu === "home" ? "active" : ""}
         >
-          home
+          Home
         </Link>
         <a
           href="#explore_menu"
           onClick={() => setMenu("menu")}
           className={menu === "menu" ? "active" : ""}
         >
-          menu
+          Menu
         </a>
         <a
           href="#app_download"
           onClick={() => setMenu("mobile-app")}
           className={menu === "mobile-app" ? "active" : ""}
         >
-          mobile-app
+          Mobile-App
         </a>
         <a
           href="#footer"
           onClick={() => setMenu("contact-us")}
           className={menu === "contact-us" ? "active" : ""}
         >
-          contact us
+          Contact Us
         </a>
       </ul>
       <div className="navbar_right">
-        <img src={assets.search_icon} alt="" className="search" />
         <div className="navbar_search_icon">
           <Link to="/cart">
-            <img src={assets.basket_icon} alt="" />
+            <img src={cart} alt="" />
           </Link>
           <div className={getTotalCartAmout() === 0 ? "" : "dot"}></div>
         </div>
